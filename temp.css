@@ -1,0 +1,99 @@
+* body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(90deg, rgb(53, 53, 232) 0%, rgb(185, 185, 192) 100%, rgb(123, 155, 80) 100%)
+}
+
+.container {
+    background: #003333;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 120px 30px rgba(0, 0, 0, 0.9);
+    width: 50%;
+    max-width: 450px;
+    font-family: sans-serif;
+}
+
+h1 {
+    color: #fff;
+    letter-spacing: 1.2px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.temp-container {
+    color: #fff;
+    font-size: 45px;
+}
+
+#celsius, #fahrenheit, #kelvin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:25px;
+}
+
+input {
+    flex: 5;
+    height: 60px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: align;
+    padding: 0 10px;
+    border: none;
+    outline: none;
+    border-radius: 8px 0 0 8px;
+}
+
+
+/* for chrome, safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+
+/* for Mozila firefox */
+input{
+    -moz-appearance: textfield;
+}
+
+
+.icon{
+    flex: 1;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 5px;
+    text-align: center;
+    font-size: 30px;
+    background: #4d5964;
+    color: #fff;
+    border-radius: 0 8px 8px 0;
+}
+
+
+.button{
+    margin-top: 25px;
+    text-align: center;
+}
+
+
+.button button{
+    border: none;
+    outline: none;
+    padding: 10px 30px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.button button:hover{
+    background: #000;
+    color: #fff;
+}
